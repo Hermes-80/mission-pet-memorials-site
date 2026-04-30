@@ -285,6 +285,7 @@ h3 {
 .info-card,
 .service-card,
 .quote-card,
+.tribute-card,
 .panel,
 .map-placeholder {
   background: var(--white);
@@ -351,7 +352,8 @@ h3 {
 }
 
 .info-card,
-.quote-card {
+.quote-card,
+.tribute-card {
   border-radius: 24px;
   padding: 24px;
 }
@@ -519,6 +521,52 @@ blockquote {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 21px;
   line-height: 1.38;
+  color: var(--deep);
+}
+
+.tribute-section .card-grid {
+  align-items: stretch;
+}
+
+.tribute-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+.tribute-card h3 {
+  margin-bottom: 12px;
+}
+
+.tribute-card p:last-child {
+  margin-bottom: 0;
+}
+
+.tribute-meta {
+  color: var(--clay);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.tribute-note {
+  max-width: 780px;
+  margin: 24px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255, 253, 248, 0.78);
+  border: 1px solid rgba(39, 64, 56, 0.08);
+}
+
+.tribute-note p {
+  margin: 0;
+  font-weight: 800;
   color: var(--deep);
 }
 
@@ -710,6 +758,11 @@ summary {
   .card-grid.three,
   .card-grid.four {
     grid-template-columns: 1fr;
+  }
+
+  .tribute-note {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .service-card {
