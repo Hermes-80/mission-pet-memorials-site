@@ -4,6 +4,7 @@ What was fixed:
 - Paw logo changed into a heart-shaped paw
 - Removed text overlays sitting on top of images
 - Simplified layout to reduce breakage
+- Replaced the map placeholder with the listed address on Google Maps
 - Kept Netlify-ready form setup
 
 Upload to Netlify:

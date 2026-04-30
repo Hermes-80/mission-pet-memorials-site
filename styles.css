@@ -611,11 +611,35 @@ summary {
 
 .map-placeholder {
   border-radius: var(--radius-lg);
-  min-height: 280px;
+  min-height: 360px;
   display: grid;
-  place-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(124, 146, 127, 0.18), rgba(239, 229, 212, 0.7));
+  grid-template-rows: minmax(300px, 1fr) auto;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.map-placeholder iframe {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.map-directions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  background: var(--deep);
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.map-directions:focus-visible {
+  outline: 3px solid #dfc2a7;
+  outline-offset: -3px;
 }
 
 .final-cta {
