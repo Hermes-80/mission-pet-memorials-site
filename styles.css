@@ -130,6 +130,10 @@ a { color: inherit; }
   font-size: 14px;
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--clay);
+}
+
 .nav-call {
   background: var(--deep);
   color: white !important;
@@ -524,6 +528,16 @@ blockquote {
   color: var(--deep);
 }
 
+.tribute-hero {
+  min-height: 520px;
+  display: grid;
+  align-items: center;
+}
+
+.tribute-hero > div {
+  max-width: 840px;
+}
+
 .tribute-section .card-grid {
   align-items: stretch;
 }
@@ -531,7 +545,11 @@ blockquote {
 .tribute-card {
   display: flex;
   flex-direction: column;
-  min-height: 250px;
+  min-height: 230px;
+}
+
+.tribute-archive-grid .tribute-card {
+  min-height: 260px;
 }
 
 .tribute-card h3 {
@@ -568,6 +586,12 @@ blockquote {
   margin: 0;
   font-weight: 800;
   color: var(--deep);
+}
+
+.tribute-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .form-section {
